@@ -1,4 +1,4 @@
-import { FC, useState } from 'react';
+import { FC, useState, useCallback } from 'react';
 import styles from './folder-hierarchy.module.css';
 import { Folder, File } from '../../types';
 
@@ -12,13 +12,20 @@ interface Props {
 const FolderHierarchy: FC<Props> = ({ folder, onSelect, activeItemId, level = 0 }) => {
   const [expanded, setExpanded] = useState(false);
 
-  const handleToggle = () => {
+  const handleToggle = useCallback(() => {
     setExpanded(!expanded);
-  };
+  }, [expanded]);
+
+  const handleSelect = useCallback(
+    (item: File | Folder) => {
+      onSelect(item);
+    },
+    [onSelect]
+  );
 
   return (
     <div className={`${styles.folder} ${styles[`level${level}`]}`}>
-      <div onClick={() => { handleToggle(); onSelect(folder); }} className={folder.id === activeItemId ? styles.active : ''}>
+      <div onClick={() => { handleToggle(); handleSelect(folder); }} className={folder.id === activeItemId ? styles.active : ''}>
         {expanded ? '📂' : '📁'} {folder.name}
       </div>
       {expanded && (
@@ -28,7 +35,7 @@ const FolderHierarchy: FC<Props> = ({ folder, onSelect, activeItemId, level = 0 
               {child.type === 'folder' ? (
                 <FolderHierarchy folder={child as Folder} onSelect={onSelect} activeItemId={activeItemId} level={level + 1} />
               ) : (
-                <div onClick={() => onSelect(child)} className={child.id === activeItemId ? styles.active : ''}>
+                <div onClick={() => handleSelect(child)} className={child.id === activeItemId ? styles.active : ''}>
                   {child.url ? '🖼️' : '📄'} {child.name}
                 </div>
               )}

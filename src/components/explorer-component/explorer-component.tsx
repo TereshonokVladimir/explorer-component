@@ -1,4 +1,4 @@
-import { FC, useState } from 'react';
+import { FC, useState, useCallback } from 'react';
 import styles from './explorer-component.module.css';
 import { Folder, File } from '../../types';
 import { FolderHierarchy } from '../folder-hierarchy';
@@ -9,14 +9,14 @@ const ExplorerComponent: FC = () => {
   const [activeFolder, setActiveFolder] = useState<Folder>(MOCK_DATA);
   const [selectedItem, setSelectedItem] = useState<File | Folder | null>(null);
 
-  const handleSelectItem = (item: File | Folder) => {
+  const handleSelectItem = useCallback((item: File | Folder) => {
     if (item.type === 'folder') {
       setActiveFolder(item);
-      setSelectedItem(null); 
+      setSelectedItem(null);
     } else {
       setSelectedItem(item);
     }
-  };
+  }, []);
 
   return (
     <div className={styles.explorer}>
