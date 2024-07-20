@@ -23,3 +23,8 @@
   padding: 10px;
   background-color: #f9f9f9;
 }
+
+.fileImage {
+  max-width: 100%;
+  height: auto;
+}

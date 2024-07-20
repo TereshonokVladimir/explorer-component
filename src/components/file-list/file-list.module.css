@@ -3,11 +3,12 @@
   flex-direction: column;
 }
 
-.fileList div {
+.fileItem {
   cursor: pointer;
   padding: 5px;
+  border-bottom: 1px solid #eee;
 }
 
-.fileList div:hover {
+.fileItem:hover {
   background-color: #f0f0f0;
 }

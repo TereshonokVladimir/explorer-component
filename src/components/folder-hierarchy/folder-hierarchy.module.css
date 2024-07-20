@@ -1,5 +1,7 @@
 .folder > div {
   cursor: pointer;
+  padding: 5px;
+  border-bottom: 1px solid #eee;
 }
 
 .children {
@@ -8,4 +10,25 @@
 
 .active {
   font-weight: bold;
+  background-color: #e0e0e0;
+}
+
+.level0 > div {
+  color: #000;
+}
+
+.level1 > div {
+  color: #007bff;
+}
+
+.level2 > div {
+  color: #28a745;
+}
+
+.level3 > div {
+  color: #17a2b8;
+}
+
+.level4 > div {
+  color: #ffc107;
 }

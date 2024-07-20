@@ -1,1 +1,1 @@
-export { default as MOCKDATA } from './mocs-data'
+export { default as MOCK_DATA } from './mocs-data'

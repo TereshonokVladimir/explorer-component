@@ -1,6 +1,6 @@
 import { Folder } from '../types';
 
-const MOCKDATA: Folder = {
+const MOCK_DATA: Folder = {
   id: 'root',
   name: 'Root',
   type: 'folder',
@@ -140,4 +140,4 @@ const MOCKDATA: Folder = {
   ]
 };
 
-export default MOCKDATA
+export default MOCK_DATA;
