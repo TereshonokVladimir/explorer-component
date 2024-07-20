@@ -1,9 +1,12 @@
+import { FC } from 'react';
+import ExplorerComponent from './components/explorer-component/explorer-component';
 
-function App() {
+const App: FC = () => {
   return (
     <div >
+      <ExplorerComponent />
     </div>
   );
-}
+};
 
 export default App;

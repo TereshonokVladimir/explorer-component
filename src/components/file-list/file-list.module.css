@@ -1,0 +1,13 @@
+.fileList {
+  display: flex;
+  flex-direction: column;
+}
+
+.fileList div {
+  cursor: pointer;
+  padding: 5px;
+}
+
+.fileList div:hover {
+  background-color: #f0f0f0;
+}

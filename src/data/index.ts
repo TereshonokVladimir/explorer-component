@@ -1,0 +1,1 @@
+export { default as MOCKDATA } from './mocs-data'
