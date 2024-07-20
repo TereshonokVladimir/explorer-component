@@ -26,11 +26,11 @@ Before you begin, ensure you have met the following requirements:
    ```bash
     git clone https://github.com/yourusername/file-explorer.git
 
-2.	Navigate to the project directory:
+2. Navigate to the project directory:
    ```bash
     cd file-explorer
 
-3.	Install the dependencies:
+3. Install the dependencies:
    ```bash
   npm install or yarn install
 
