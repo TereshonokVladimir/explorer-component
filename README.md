@@ -32,7 +32,7 @@ Before you begin, ensure you have met the following requirements:
 
 3. Install the dependencies:
    ```bash
-  npm install or yarn install
+    npm install or yarn install
 
 
 ### Usage
@@ -53,38 +53,38 @@ Before you begin, ensure you have met the following requirements:
 
   The build artifacts will be stored in the build folder.
 
-## Project Structure 
+### Project Structure 
 
-src/
-├── components/
-│   ├── explorer-component/
-│   │   ├── explorer-component.tsx
-│   │   ├── explorer-component.module.css
-│   ├── file-list/
-│   │   ├── file-list.tsx
-│   │   ├── file-list.module.css
-│   ├── folder-hierarchy/
-│   │   ├── folder-hierarchy.tsx
-│   │   ├── folder-hierarchy.module.css
-├── data/
-│   ├── mock-data.ts
-├── types/
-│   ├── file.ts
-│   ├── folder.ts
-├── App.tsx
-├── index.tsx
+  src/
+  ├── components/
+  │   ├── explorer-component/
+  │   │   ├── explorer-component.tsx
+  │   │   ├── explorer-component.module.css
+  │   ├── file-list/
+  │   │   ├── file-list.tsx
+  │   │   ├── file-list.module.css
+  │   ├── folder-hierarchy/
+  │   │   ├── folder-hierarchy.tsx
+  │   │   ├── folder-hierarchy.module.css
+  ├── data/
+  │   ├── mock-data.ts
+  ├── types/
+  │   ├── file.ts
+  │   ├── folder.ts
+  ├── App.tsx
+  ├── index.tsx
 
-•	components/: Contains the main components of the application.
-•	data/: Contains mock data used for the file explorer.
-•	types/: Contains TypeScript type definitions.
-•	App.tsx: The main app component.
-•	index.tsx: The entry point of the application.
+  > components/: Contains the main components of the application.
+  > data/: Contains mock data used for the file explorer.
+  > types/: Contains TypeScript type definitions.
+  > App.tsx: The main app component.
+  > index.tsx: The entry point of the application.
 
-## Contributing
+### Contributing
 
 - Contributions are always welcome! Please feel free to submit a Pull Request.
 
-## Contact
+### Contact
 
 - Tereshonok Volodymyr - tereshonokvova@gmail.com
 
