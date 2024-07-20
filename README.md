@@ -43,7 +43,7 @@ Before you begin, ensure you have met the following requirements:
     or
     yarn start
 
-- Open http://localhost:3000 to view it in the browser. The page will reload if you make edits. You will also see any lint errors in the console.
+  Open http://localhost:3000 to view it in the browser. The page will reload if you make edits. You will also see any lint errors in the console.
 
 2. Building for Production
     ```bash
@@ -51,9 +51,9 @@ Before you begin, ensure you have met the following requirements:
     or
     yarn build
 
-- The build artifacts will be stored in the build folder.
+  The build artifacts will be stored in the build folder.
 
-### Project Structure 
+## Project Structure 
 
 src/
 ├── components/
@@ -80,11 +80,11 @@ src/
 •	App.tsx: The main app component.
 •	index.tsx: The entry point of the application.
 
-### Contributing
+## Contributing
 
-Contributions are always welcome! Please feel free to submit a Pull Request.
+- Contributions are always welcome! Please feel free to submit a Pull Request.
 
-### Contact
+## Contact
 
 - Tereshonok Volodymyr - tereshonokvova@gmail.com
 
