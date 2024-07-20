@@ -56,7 +56,7 @@ Before you begin, ensure you have met the following requirements:
 ### Project Structure 
 
     src/
-    ├── components/
+    ├── components/                             #Contains the main components of the application.
     │   ├── explorer-component/
     │   │   ├── explorer-component.tsx
     │   │   ├── explorer-component.module.css
@@ -66,19 +66,13 @@ Before you begin, ensure you have met the following requirements:
     │   ├── folder-hierarchy/
     │   │   ├── folder-hierarchy.tsx
     │   │   ├── folder-hierarchy.module.css
-    ├── data/
+    ├── data/                                   #Contains mock data used for the file explorer.
     │   ├── mock-data.ts
-    ├── types/
+    ├── types/                                  #Contains TypeScript type definitions.
     │   ├── file.ts
     │   ├── folder.ts
-    ├── App.tsx
-    ├── index.tsx
-
-> components/: Contains the main components of the application.
-> data/: Contains mock data used for the file explorer.
-> types/: Contains TypeScript type definitions.
-> App.tsx: The main app component.
-> index.tsx: The entry point of the application.
+    ├── App.tsx                                 #The main app component.
+    ├── index.tsx                               #The entry point of the application.
 
 ### Contributing
 
