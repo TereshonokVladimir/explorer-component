@@ -1,46 +1,91 @@
-# Getting Started with Create React App
+# File Explorer React App
+
+This project is a simple file explorer application built with React and TypeScript. It allows users to navigate through a folder hierarchy and view the contents of files. The application supports plain text files and images.
+
+## Features
+
+- **Folder Hierarchy**: Navigate through nested folders.
+- **File List**: View the list of files and folders in the selected directory.
+- **File Viewer**: Display the contents of plain text files and images.
+- **Dynamic Icons**: Different icons for folders, text files, and image files.
+
+## Getting Started
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+### Prerequisites
 
-In the project directory, you can run:
+Before you begin, ensure you have met the following requirements:
 
-### `npm start`
+- Node.js installed on your machine.
+- npm or yarn package manager.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Installation
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+1. Clone the repository:
+   ```bash
+    git clone https://github.com/yourusername/file-explorer.git
 
-### `npm test`
+2.	Navigate to the project directory:
+   ```bash
+    cd file-explorer
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+3.	Install the dependencies:
+   ```bash
+  npm install or yarn install
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Usage
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. To run the app in the development mode, use the following command:
+    ```bash
+    npm start
+    or
+    yarn start
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Open http://localhost:3000 to view it in the browser. The page will reload if you make edits. You will also see any lint errors in the console.
 
-### `npm run eject`
+2. Building for Production
+    ```bash
+    npm build
+    or
+    yarn build
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- The build artifacts will be stored in the build folder.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Project Structure 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+src/
+├── components/
+│   ├── explorer-component/
+│   │   ├── explorer-component.tsx
+│   │   ├── explorer-component.module.css
+│   ├── file-list/
+│   │   ├── file-list.tsx
+│   │   ├── file-list.module.css
+│   ├── folder-hierarchy/
+│   │   ├── folder-hierarchy.tsx
+│   │   ├── folder-hierarchy.module.css
+├── data/
+│   ├── mock-data.ts
+├── types/
+│   ├── file.ts
+│   ├── folder.ts
+├── App.tsx
+├── index.tsx
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+•	components/: Contains the main components of the application.
+•	data/: Contains mock data used for the file explorer.
+•	types/: Contains TypeScript type definitions.
+•	App.tsx: The main app component.
+•	index.tsx: The entry point of the application.
 
-## Learn More
+### Contributing
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Contributions are always welcome! Please feel free to submit a Pull Request.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Contact
+
+- Tereshonok Volodymyr - tereshonokvova@gmail.com
+
+- Project Link: https://github.com/TereshonokVladimir/file-explorer
