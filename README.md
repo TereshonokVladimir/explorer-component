@@ -53,10 +53,11 @@ Before you begin, ensure you have met the following requirements:
 
   The build artifacts will be stored in the build folder.
 
+
 ### Project Structure 
 
     src/
-    ├── components/                             #Contains the main components of the application.
+    ├── components/
     │   ├── explorer-component/
     │   │   ├── explorer-component.tsx
     │   │   ├── explorer-component.module.css
@@ -66,13 +67,23 @@ Before you begin, ensure you have met the following requirements:
     │   ├── folder-hierarchy/
     │   │   ├── folder-hierarchy.tsx
     │   │   ├── folder-hierarchy.module.css
-    ├── data/                                   #Contains mock data used for the file explorer.
+    ├── data/
     │   ├── mock-data.ts
-    ├── types/                                  #Contains TypeScript type definitions.
+    ├── types/
     │   ├── file.ts
     │   ├── folder.ts
-    ├── App.tsx                                 #The main app component.
-    ├── index.tsx                               #The entry point of the application.
+    ├── App.tsx
+    ├── index.tsx
+
+> components/: Contains the main components of the application.
+
+> data/: Contains mock data used for the file explorer.
+
+> types/: Contains TypeScript type definitions.
+
+> App.tsx: The main app component.
+
+> index.tsx: The entry point of the application.
 
 ### Contributing
 
